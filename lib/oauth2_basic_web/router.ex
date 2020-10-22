@@ -18,6 +18,8 @@ defmodule Oauth2BasicWeb.Router do
 
     get "/", PageController, :index
 
+    get "/login", LoginController, :index
+
     resources "/users", UserController
   end
 
